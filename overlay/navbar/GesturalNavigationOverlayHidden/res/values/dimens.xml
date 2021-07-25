@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-/**
- * Copyright (c) 2018, The Android Open Source Project
+ * Copyright (c) 2006, The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,9 +13,14 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
+*/
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Name of overlay [CHAR LIMIT=64] -->
-    <string name="immersive_navigation_mode_title" translatable="false">Immersive Navigation</string>
+<resources>
+    <dimen name="config_backGestureInset">24.0dip</dimen>
+    <dimen name="navigation_bar_frame_height">0.0dip</dimen>
+    <dimen name="navigation_bar_gesture_height">18.0dip</dimen>
+    <dimen name="navigation_bar_height">0.0dip</dimen>
+    <dimen name="navigation_bar_height_landscape">0.0dip</dimen>
+    <dimen name="navigation_bar_width">0.0dip</dimen>
+    <dimen name="navigation_bar_frame_height_landscape">0.0dip</dimen>
 </resources>
