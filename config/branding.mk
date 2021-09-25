@@ -43,7 +43,6 @@ EVO_VERSION := EvolutionX_$(EVO_BASE_VERSION)_$(EVOLUTION_BUILD)-$(EVO_PLATFORM_
 EVO_VERSION_PROP := $(PLATFORM_VERSION)
 
 PRODUCT_GENERIC_PROPERTIES += \
-    ro.build.stock_fingerprint=$(TARGET_FORCE_BUILD_FINGERPRINT) \
     org.evolution.version=$(EVO_VERSION) \
     org.evolution.version.prop=$(EVO_VERSION_PROP) \
     org.evolution.version.display=$(EVO_VERSION_DISPLAY) \
