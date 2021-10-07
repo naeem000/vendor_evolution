@@ -40,9 +40,8 @@ $(PROD_OTA_PACKAGE_TARGET): $(BRO)
 $(PROD_OTA_PACKAGE_TARGET): $(SIGNED_TARGET_FILES_PACKAGE) \
 		build/tools/releasetools/ota_from_target_files
 	@echo "evolution production: $@"
-	    ./build/tools/releasetools/ota_from_target_files --verbose \
+	    $(OTA_FROM_TARGET_FILES) --verbose \
 	    --block \
-	    --backup true \
 	    -p $(OUT_DIR)/host/linux-x86 \
 	    -k $(KEY_CERT_PAIR) \
 	    $(SIGNED_TARGET_FILES_PACKAGE) $@
@@ -64,7 +63,7 @@ $(INCREMENTAL_OTA_PACKAGE_TARGET): $(BRO)
 $(INCREMENTAL_OTA_PACKAGE_TARGET): $(SIGNED_TARGET_FILES_PACKAGE) \
 		build/tools/releasetools/ota_from_target_files
 	@echo "evolution incremental production: $@"
-	    ./build/tools/releasetools/ota_from_target_files --verbose \
+	    $(OTA_FROM_TARGET_FILES) --verbose \
 	    --block \
 	    -p $(OUT_DIR)/host/linux-x86 \
 	    -k $(KEY_CERT_PAIR) \
